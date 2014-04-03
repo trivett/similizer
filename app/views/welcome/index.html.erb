@@ -5,9 +5,10 @@
 <h2>Enter an artist you like to find suggestions for</h2>
 
 
-<%= form_for(@query) do |f| %>
-  <%= f.label :artist %>
-  <%= f.text_field :artist %>
-  <%= f.submit %>
-<% end %>
 
+
+<form action="/artist" method="get">
+  <label for="artist">Artist</label>
+  <input type="text" name="artist">
+  <input type="submit">
+</form>

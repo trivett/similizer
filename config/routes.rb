@@ -2,6 +2,7 @@ Similizer::Application.routes.draw do
 
   root to: "welcome#index"
 
-  get "/:artist", to: "welcome#show"
+  get "/artist", to: "welcome#show", as: :artist
 
 end
+

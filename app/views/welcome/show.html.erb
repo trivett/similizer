@@ -1,1 +1,8 @@
 <%= @query %>
+<%= @artist[0].id %>
+
+<% @suggestions.each do |suggestion| %>
+  <ul>
+    <li><%= suggestion.artist_location %></li>
+  </ul>
+  <% end %>
