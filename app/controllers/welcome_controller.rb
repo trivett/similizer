@@ -10,6 +10,9 @@ class WelcomeController < ApplicationController
 
   end
 
+  def artist
+    redirect_to("/#{params[:artist]}")
+  end
 
 
 end
