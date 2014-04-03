@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-Similizer::Application.config.secret_key_base = '7a320696201d529024d06b37abc9eacb2d50a4e2b4758ba014c680d8192b1db3d18de202c8ad78f037b8f60a4faf1295d03d928ca560bf7808ee60328f86d73e'
+Similizer::Application.config.secret_key_base = '0215e1d4df6feda4993e0b8511e8d4cba94c1de5e090ea58264fa60a00554f862927375c049d7f96de4aa52836ae4569f612763e591cfb8b831c8677eb1be682'

@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.4'
 
+
 # Use postgresql as the database for Active Record
 gem 'pg'
 
@@ -43,3 +44,8 @@ gem 'bcrypt', '~> 3.1.7'
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+gem "echowrap"
+gem "better_errors"
+gem "binding_of_caller"
+# gem "HTTParty"

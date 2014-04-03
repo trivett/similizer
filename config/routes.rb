@@ -1,4 +1,5 @@
 Similizer::Application.routes.draw do
+<<<<<<< HEAD
   
   get '/login', to: 'sessions#new'
   post '/sessions', to: 'sessions#create'
@@ -6,4 +7,12 @@ Similizer::Application.routes.draw do
 
   resources :users
 
+=======
+
+  root to: "welcome#index"
+
+  get "/artist", to: "welcome#artist"
+  get "/:artist", to: "welcome#show"
+>>>>>>> 7a743f0bb9ce9e726747dc20aa59f835cde29728
 end
+

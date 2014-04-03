@@ -1,0 +1,24 @@
+<%= @query %>
+<%= @artist[0].name %>
+
+<% @suggestions.each do |suggestion| %>
+  <ul>
+    <li><%= suggestion.name %></li>
+    <li><img src="<%= suggestion.images[0].url %>" alt=""></li>
+    <li>biography: <%= suggestion.biographies.count %></li>
+    <li><%= suggestion.blogs %></li>
+    <li><%= suggestion.years_active %></li>
+
+
+
+  </ul>
+  <% end %>
+
+
+<!--
+:biographies, :blogs, :doc_counts, :images, :foreign_ids, :location, :news, :reviews, :songs, :terms, :urls, :video, :years_active, :name, :name?, :twitter, :twitter?, :id, :id?, :familiarity, :familiarity?, :hotttnesss, :hotttnesss?,
+
+
+"audio", "biographies", "blogs", "doc_counts", "familiarity", "familiarity_rank", "genre", "hotttnesss", "hotttnesss_rank", "discovery", "discovery_rank", "images", "artist_location", "news", "reviews", "songs", "terms", "urls", "video", "years_active", "id:7digital-US", "id:7digital-AU", "id:7digital-UK", "id:facebook", "id:fma", "id:emi_open_collection", "id:emi_bluenote", "id:emi_artists", "id:twitter", "id:spotify-WW", "id:seatwave", "id:lyricfind-US", "id:jambase", "id:musixmatch-WW", "id:rdio-US", "id:rdio-AT", "id:rdio-AU", "id:rdio-BR", "id:rdio-CA", "id:rdio-CH", "id:rdio-DE", "id:rdio-DK", "id:rdio-ES", "id:rdio-FI", "id:rdio-FR", "id:rdio-IE", "id:rdio-IT", "id:rdio-NL", "id:rdio-NO", "id:rdio-NZ", "id:rdio-PT", "id:rdio-SE", "id:emi_electrospective", "id:rdio-WW", "id:rdio-EE", "id:rdio-LT", "id:rdio-LV", "id:rdio-IS", "id:rdio-BE", "id:rdio-MX", "id:seatgeek", "id:rdio-GB", "id:rdio-CZ", "id:rdio-CO", "id:rdio-PL", "id:rdio-MY", "id:rdio-HK", "id:rdio-CL", "id:twitter_numeric", "id:7digital-ES", or "id:<CATALOG ID>"
+
+ -->
