@@ -1,7 +1,7 @@
 Similizer::Application.routes.draw do
 
-  def index
-    @query =
-  end
+  root to: "welcome#index"
+
+  get "/:artist", to: "welcome#show"
 
 end
