@@ -1,4 +1,4 @@
-<%= @query %>
+
 <%= @artist[0].name %>
 
 <% @suggestions.each do |suggestion| %>
@@ -6,6 +6,17 @@
     <li><%= suggestion.name %></li>
     <li><img src="<%= suggestion.images[0].url %>" alt=""></li>
 <%= link_to("Suggestions based on #{suggestion.name}", "/#{suggestion.name}") %>
+    </li>
+    <li>
+
+
+  <form action="/artists" method="post">
+: <input type="hidden" name="artist" value="<%= suggestion.id %>">
+<input type="submit" value="Submit">
+</form>
+
+
+
     </li>
 
   </ul>

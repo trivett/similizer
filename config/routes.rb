@@ -5,10 +5,12 @@ Similizer::Application.routes.draw do
   get '/logout', to: 'sessions#destroy'
 
   resources :users
-
+  resources :artists
   root to: "welcome#index"
 
   get "/artist", to: "welcome#artist"
   get "/:artist", to: "welcome#show"
+
+
 end
 
