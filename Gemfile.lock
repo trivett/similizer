@@ -27,15 +27,12 @@ GEM
       tzinfo (~> 0.3.37)
     arel (4.0.2)
     atomic (1.1.16)
-<<<<<<< HEAD
     bcrypt (3.1.7)
-=======
     better_errors (1.1.0)
       coderay (>= 1.0.0)
       erubis (>= 2.6.6)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
->>>>>>> 7a743f0bb9ce9e726747dc20aa59f835cde29728
     builder (3.1.4)
     coderay (1.1.0)
     coffee-rails (4.0.1)
@@ -128,12 +125,9 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-<<<<<<< HEAD
   bcrypt (~> 3.1.7)
-=======
   better_errors
   binding_of_caller
->>>>>>> 7a743f0bb9ce9e726747dc20aa59f835cde29728
   coffee-rails (~> 4.0.0)
   echowrap
   jbuilder (~> 1.2)

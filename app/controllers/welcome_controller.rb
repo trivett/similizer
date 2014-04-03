@@ -6,11 +6,10 @@ class WelcomeController < ApplicationController
 
   def show
     @artist = Echowrap.artist_search(:name => params[:artist], :results => 1)
-    @suggestions = Echowrap.artist_similar(:id => @artist[0].id, :results => 1, :bucket => ['artist_location', 'hotttnesss', 'audio', 'blogs', 'images'])
+    @suggestions = Echowrap.artist_similar(:id => @artist[0].id, :results => 5, :bucket => ['artist_location', 'hotttnesss', 'audio', 'blogs', 'images'])
 
-
-
-
+    @make_artist = Artist.new
+    @make_artist.save
   end
 
 

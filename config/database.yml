@@ -4,11 +4,8 @@ development:
   encoding: unicode
   database: similizer_development
   pool: 5
-<<<<<<< HEAD
-  username: derekdigioia
-=======
+
   username: vincent
->>>>>>> 7a743f0bb9ce9e726747dc20aa59f835cde29728
   password:
 
 
@@ -19,11 +16,7 @@ production:
   encoding: unicode
   database: similizer_test
   pool: 5
-<<<<<<< HEAD
-  username: derekdigioia
-=======
   username: vincent
->>>>>>> 7a743f0bb9ce9e726747dc20aa59f835cde29728
   password:
 
 production:
@@ -31,9 +24,5 @@ production:
   encoding: unicode
   database: similizer_production
   pool: 5
-<<<<<<< HEAD
-  username: derekdigioia
-=======
   username: vincent
->>>>>>> 7a743f0bb9ce9e726747dc20aa59f835cde29728
   password:

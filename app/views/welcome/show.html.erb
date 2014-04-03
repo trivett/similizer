@@ -5,11 +5,15 @@
   <ul>
     <li><%= suggestion.name %></li>
     <li><img src="<%= suggestion.images[0].url %>" alt=""></li>
-    <li>biography: <%= suggestion.biographies.count %></li>
-    <li><%= suggestion.blogs %></li>
-    <li><%= suggestion.years_active %></li>
+    <li>biography: <%= suggestion.biographies %></li>
 
+    <li><%= form_for(@make_artist) do |f| %>
+          <%= f.hidden_field_tag(:echo_id, suggestion.id) %>
+          <%= f.submit %>
 
+          <% end %>
+
+    </li>
 
   </ul>
   <% end %>
