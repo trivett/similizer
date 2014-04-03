@@ -5,14 +5,7 @@
   <ul>
     <li><%= suggestion.name %></li>
     <li><img src="<%= suggestion.images[0].url %>" alt=""></li>
-    <li>biography: <%= suggestion.biographies %></li>
-
-    <li><%= form_for(@make_artist) do |f| %>
-          <%= f.hidden_field_tag(:echo_id, suggestion.id) %>
-          <%= f.submit %>
-
-          <% end %>
-
+<%= link_to("Suggestions based on #{suggestion.name}", "/#{suggestion.name}") %>
     </li>
 
   </ul>
